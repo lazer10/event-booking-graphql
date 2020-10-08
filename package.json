@@ -1,0 +1,24 @@
+{
+  "name": "event-booking-graphql",
+  "version": "1.0.0",
+  "description": "This is an event booking app made using GraphQL, where users will be able to book events and cancel their bookings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lazer10/event-booking-graphql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lazer10/event-booking-graphql/issues"
+  },
+  "homepage": "https://github.com/lazer10/event-booking-graphql#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
