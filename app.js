@@ -6,12 +6,15 @@ const dotenv = require('dotenv');
 
 const graphQlSchema = require('./graphql/schema/index');
 const graphQlResolvers = require('./graphql/resolvers/index');
+const Authorization = require('./middlewares/authorization');
 
 const app = express();
 
 dotenv.config();
  
 app.use(bodyParser.json());
+
+app.use(Authorization);
 
 app.use('/graphql', graphqlHTTP({
     schema: graphQlSchema,
